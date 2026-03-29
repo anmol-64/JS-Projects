@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgba(183, 181, 181, 0.911);
+}
+
+#box {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  border: none;
+  height: 250px;
+  width: 300px;
+  background-color: rgba(0, 136, 255, 0.3);
+  backdrop-filter: blur(25px);
+  color: white;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h3 {
+  color: rgba(255, 255, 255, 0.931);
+}
+
+.container {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  height: auto;
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(35, 35, 100);
+  position: relative;
+}
+
+input {
+  padding: 8px;
+  border-radius: 30px;
+  outline: none;
+}
+
+#calculate,
+#done {
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  margin-top: 10px;
+}
+
+#calculate:hover,
+#done:hover {
+  background-color: rgb(29, 111, 186);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transform: scale(1.1);
+}

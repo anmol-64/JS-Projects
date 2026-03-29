@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tip-Calculator</h1>
+      <h3>Enter Bill Amount:</h3>
+      <input type="number" placeholder="Enter Bill Amount" id="billAmount" />
+      <h3>Enter Tip Percentage:</h3>
+      <input
+        type="number"
+        placeholder="Enter Tip Percentage"
+        id="tipPercentage"
+      />
+      <h3>Enter the number of people splitting the bill:</h3>
+      <input
+        type="number"
+        placeholder="Enter number of People"
+        style="width: 175px"
+        id="people"
+      />
+      <br /><br />
+      <button id="calculate">Calculate</button>
+
+      <div id="box" style="display: none">
+        <p id="showAmount"></p>
+        <p id="sharedMoney"></p>
+        <button id="done">Done</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
