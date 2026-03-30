@@ -1,0 +1,100 @@
+#createTask {
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em;
+  border-width: 0px;
+  border-radius: 2rem;
+  box-shadow: #33333366 3px 2px 2px 1px;
+  animation: idle 1s infinite ease-in-out;
+  background-color: #49a5e6;
+  color: white;
+  margin: 20px;
+}
+
+#createTask:hover,
+#addBtn:hover,
+#doneBtn:hover {
+  transition: 0.3s ease;
+  transform: scale(1.08);
+}
+
+#addBtn,
+#doneBtn {
+  border: none;
+  size: 1.5rem;
+  border-radius: 1rem;
+  padding: 10px;
+  font-size: 1.05rem;
+  background-color: #49a5e6;
+  color: white;
+  font-family: "Courier New", monospace;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+h3 {
+  font-family: "Courier New", monospace;
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-top: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 300px;
+}
+
+#taskList {
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.3rem;
+  margin: 20px;
+  color: white;
+}
+
+#inputTask {
+  border: 2px solid grey;
+  height: 30px;
+  width: 300px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  margin: 20px;
+  padding: 10px;
+  outline: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(216, 216, 216);
+}
+
+body {
+  background-color: rgb(2, 131, 146);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(18, 80, 141);
+  margin: 20px;
+  border-radius: 3rem;
+  height: auto;
+  width: auto;
+  min-height: 400px;
+  min-width: 500px;
+}
+
+.btns {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
