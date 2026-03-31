@@ -13,8 +13,32 @@ createTask.addEventListener("click", () => {
 
 addBtn.addEventListener("click", () => {
   if (inputTask.value !== "") {
-    const list = document.createElement("li");
-    list.textContent = inputTask.value;
+    const list = document.createElement("list");
+    const checkBox = document.createElement("input");
+    checkBox.type = "checkbox";
+    const taskText = document.createElement("span");
+    taskText.textContent = inputTask.value;
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "🗑️";
+
+    checkBox.addEventListener("click", () => {
+      if (checkBox.checked) {
+        taskText.style.textDecoration = "line-through";
+        taskText.style.opacity = "0.5";
+      } else {
+        taskText.style.textDecoration = "none";
+        taskText.style.opacity = "1";
+      }
+    });
+
+    deleteBtn.addEventListener("click", () => {
+      list.remove();
+    });
+
+    list.appendChild(checkBox);
+    list.appendChild(taskText);
+    list.appendChild(deleteBtn);
     taskList.appendChild(list);
     inputTask.value = "";
     heading.style.display = "block";

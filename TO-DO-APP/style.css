@@ -98,3 +98,18 @@ body {
   justify-content: flex-start;
   gap: 60px;
 }
+
+#taskList list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#taskList button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  background: transparent;
+  margin-left: 20px;
+}
